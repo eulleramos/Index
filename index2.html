@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Módulo Técnico, Site</title>
+	</head>
+	<body>
+<!-- Conteúdo -->
+	<button onclick="window.location.href = 'pagina1.html'">Link para pagina 1</button>
+	<button onclick="window.location.href = 'pagina2.html'">Link para pagina 2</button>
+
+ <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="site">
+    <div id="cabecalho">
+        <div id="menu-principal">
+            <ul>
+                <li>
+                    <a class="ativo" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="empresa.html">Empresa</a>
+                </li>
+                <li>
+                    <a href="servicos.html">Serviços</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="conteudo">
+        <div id="conteudo-principal">
+            <h1>Bem-vindo ao site da Empresa</h1>
+
+
+
+ </p>
+            <p>
+                <a href="empresa.html">Saiba mais</a>
+            </p>
+        </div>
+    </div>
+    <div id="rodape">
+        <p id="telefone-email">
+            contato@exemplo.com.br
+            <br>
+            <span class="ddd">41</span> 5555-5555
+        </p>
+
+        <p id="endereco">
+            Rua do Endereço, 123, Bairro
+            <br>
+            CEP 80000-000
+            <br>
+            Florianópolis - SC
+        </p>
+
+        <small id="copyright">
+            &copy; Empresa Ltda. Todos os Direitos Reservados.
+        </small>
+    </div>
+</div>
+
+</body>
+</html>
+
+	<p>Responsável pela empresa: Euller Ramos dos Santos  </p>
+	
+	<p>
+	
+
+
+
+
+
+</body>
+</html>
+	<head>
+		<style>
+			.container{
+			width: 400px;
+			height: 150px;
+		  }
+		   
+		  .wall{
+			display: none;
+			width: 100%;
+			height: 100%;
+		  }
+		   
+		  /* Corzinha de fundo para diferenciar */
+		  .wall-1{ background-color: #f00; }
+		  .wall-2{ background-color: #0f0; }
+		  .wall-3{ background-color: #00f; }
+		   
+		  .wall:target{
+			display: block;
+		  }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="wall wall-1" id="wall-1">
+			  <a href="#wall-3">Voltar</a>
+			  <h1> Tecnico </h1>
+			  <a href="#wall-2">Avançar</a>
+			</div>
+			
+			<div class="wall wall-2" id="wall-2">
+			  <a href="#wall-1">Voltar</a>
+			  <h1> Tecnico </h1>
+			  <a href="#wall-3">Avançar</a>
+			</div>
+			
+			<div class="wall wall-3" id="wall-3">
+			  <a href="#wall-2">Voltar</a>
+			  <h1> Tecnico </h1>
+			  <a href="#wall-1">Avançar</a>
+			</div>
+		</div>
+	  
+
+		<script>
+			 window.location = "#wall-1";
+		</script>
+	</body>
+</html>
+
+<html>
+<head>
+<script>
+function clickCounter() {
+  if(typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Clique e veja a contagem aumentar</p>
+<p>Feche a guia (ou janela) do navegador e tente novamente, e o contador continuará a contar (não é zerado).</p>
+
+<hl> o JS utilizado para representar a contagem dos cliques, e o LocalStorage usado é para MANTER a contagem mesmo após o usuário fechar o site ou desligar o computador. É essencial sua utilidade, pois assim aquele que acessa o site não precisa se preocupar em situações de quedas de internet ou problemas que façam seu computador ou aparelho eletrônico desligar, pois assim que ele acessar novamente, estará salvo seu dado, no caso desse site em específico, sua contagem de cliques! Ou seja, o JavaScript e o LocalStorage estão conectados nessa, pois um é responsável pelo funcionamento da contagem de cliques, e o outro por armazenar a contagem, salvando-a automáticamente. </hl>
+
+
+
+
+</body>
+</html>
